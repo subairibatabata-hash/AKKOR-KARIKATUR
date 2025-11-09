@@ -220,9 +220,12 @@
   }
 }
 </script>
+<!-- Add Babel Standalone for in-browser JSX/TSX compilation -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
+    <!-- Change script type to "text/babel" to be processed by Babel -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
 </body>
 </html>
